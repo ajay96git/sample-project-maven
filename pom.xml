@@ -38,6 +38,18 @@
     </dependencies>
 
     <build>
+             <distributionManagement>
+                      <repository>
+                               <id>deployment</id>
+                               <name>sample_maven_release</name>
+                               <url>http://localhost:8081/repository/sample_maven_release/</url>
+                      </repository>
+                      <snapshotrepository>
+                               <id>deployment</id>
+                               <name>sample_maven_snapshot</name>
+                               <url>http://localhost:8081/repository/sample_maven_snapshot/</url>
+                      </snapshotrepository>         
+             </distributionManagement>                  
         <plugins>
             <plugin>
                 <groupId>org.web3j</groupId>
